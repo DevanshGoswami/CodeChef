@@ -8,7 +8,7 @@ export const Card =(props) => {
                         <div class="frontside">
                             <div class="card">
                                 <div class="card-body text-center">
-                                    <p><img class=" img-fluid" src={props.img} alt="card image"></img></p>
+                                    <p><img class=" img-fluid" src={props.img} alt=""></img></p>
                                     <h4 class="card-title" style={{fontWeight:"bold"}}>{props.name}</h4>
                                     <p class="card-text">{props.position}</p>
                                 </div>

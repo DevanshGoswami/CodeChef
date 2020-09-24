@@ -1,7 +1,6 @@
 import React from 'react';
 import './App.css';
-import Logo from "./codechef.png";
-import Logo2 from "./codechef2.png";
+
 import {Link,withRouter} from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import 'font-awesome/css/font-awesome.css';
@@ -13,9 +12,7 @@ import {Helmet} from 'react-helmet';
 
 
 class Team extends React.Component{
-    constructor(props){
-        super(props);
-    }
+   
 
     render(){
         return(

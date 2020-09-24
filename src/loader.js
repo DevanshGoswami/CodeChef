@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css';
 import "bootstrap/dist/css/bootstrap.min.css";
 import 'font-awesome/css/font-awesome.css';
-import logo from "./images/loaderimg.png"
+
 export const Loader =() => {
     return(
         <>

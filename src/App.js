@@ -1,5 +1,5 @@
-import React, {useEffect} from 'react';
-import {Switch , Route ,BrowserRouter as Router , withRouter} from 'react-router-dom';
+import React from 'react';
+import {Switch , Route ,BrowserRouter as Router} from 'react-router-dom';
 import {Loader} from './loader';
 
 const Home = React.lazy(()=>import('./home'));
@@ -9,9 +9,7 @@ const Team = React.lazy(()=>import('./team'));
 
 
 class App extends React.Component{
-  constructor(props){
-    super(props);
-  }
+  
 
   render() {
     
