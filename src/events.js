@@ -95,10 +95,10 @@ class Events extends React.Component{
 							<li><Link to="/events" style={{color:"#713e20"}} className="active-link">Events</Link></li>
 						</ul>
 						<ul class="icons" style={{marginLeft:"15px"}}>
-						<li><a href="https://twitter.com/CodeChefSRM" class="icon brands style2 fa-twitter sept-link" target="_blank"><span class="label">Twitter</span></a></li>
-							<li><a href="https://www.facebook.com/CodeChefSRM/" class="icon brands style2 fa-facebook-f sept-link" target="_blank"><span class="label">Facebook</span></a></li>
-							<li><a href="https://www.instagram.com/codechefsrm/" class="icon brands style2 fa-instagram sept-link" target="_blank"><span class="label">Instagram</span></a></li>
-							<li><a href="https://in.linkedin.com/company/ccscsrm" class="icon brands style2 fa-linkedin-in sept-link" target="_blank"><span class="label">LinkedIn</span></a></li>
+						<li><a href="https://twitter.com/CodeChefSRM" class="icon brands style2 fa-twitter sept-link" target = "_blank" rel = "noopener noreferrer"><span class="label">Twitter</span></a></li>
+							<li><a href="https://www.facebook.com/CodeChefSRM/" class="icon brands style2 fa-facebook-f sept-link" target = "_blank" rel = "noopener noreferrer"><span class="label">Facebook</span></a></li>
+							<li><a href="https://www.instagram.com/codechefsrm/" class="icon brands style2 fa-instagram sept-link" target = "_blank" rel = "noopener noreferrer"><span class="label">Instagram</span></a></li>
+							<li><a href="https://in.linkedin.com/company/ccscsrm" class="icon brands style2 fa-linkedin-in sept-link" target = "_blank" rel = "noopener noreferrer"><span class="label">LinkedIn</span></a></li>
 						</ul>
 						</div>
 					</div>
@@ -157,11 +157,11 @@ class Events extends React.Component{
 <footer class="wrapper style1 align-center">
 					<div class="inner">
 						<ul class="icons">
-							<li><a href="https://twitter.com/CodeChefSRM" class="icon brands style2 fa-twitter sept-link" target="_blank"><span class="label">Twitter</span></a></li>
-							<li><a href="https://www.facebook.com/CodeChefSRM/" class="icon brands style2 fa-facebook-f sept-link" target="_blank"><span class="label">Facebook</span></a></li>
-							<li><a href="https://www.instagram.com/codechefsrm/" class="icon brands style2 fa-instagram sept-link" target="_blank"><span class="label">Instagram</span></a></li>
-							<li><a href="https://in.linkedin.com/company/ccscsrm" class="icon brands style2 fa-linkedin-in sept-link" target="_blank"><span class="label">LinkedIn</span></a></li>
-							<li><a href="mailto:codechefsrm@gmail.com" class="icon style2 fa-envelope sept-link"><span class="label" target="_blank">Email</span></a></li>
+							<li><a href="https://twitter.com/CodeChefSRM" class="icon brands style2 fa-twitter sept-link" target = "_blank" rel = "noopener noreferrer"><span class="label">Twitter</span></a></li>
+							<li><a href="https://www.facebook.com/CodeChefSRM/" class="icon brands style2 fa-facebook-f sept-link" target = "_blank" rel = "noopener noreferrer"><span class="label">Facebook</span></a></li>
+							<li><a href="https://www.instagram.com/codechefsrm/" class="icon brands style2 fa-instagram sept-link" target = "_blank" rel = "noopener noreferrer"><span class="label">Instagram</span></a></li>
+							<li><a href="https://in.linkedin.com/company/ccscsrm" class="icon brands style2 fa-linkedin-in sept-link" target = "_blank" rel = "noopener noreferrer"><span class="label">LinkedIn</span></a></li>
+							<li><a href="mailto:codechefsrm@gmail.com" class="icon style2 fa-envelope sept-link"><span class="label" target = "_blank" rel = "noopener noreferrer">Email</span></a></li>
 						</ul>
 						<p><span className="sept">&copy;</span> CodeChef SRM: All Rights Reserved.</p>
 						<p style={{fontSize:"13px"}}>SRM Institute of Science and Technology,<br></br> SRM Nagar, Kattankulathur, Chengalpattu District,<br></br> Tamil Nadu - 603203.</p>

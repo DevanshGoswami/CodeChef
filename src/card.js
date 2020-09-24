@@ -21,11 +21,11 @@ export const Card =(props) => {
                                     <p class="card-text">{props.desc}</p>
                                     <ul class="list-inline">
                                         <li class="list-inline-item">
-                                            <a class="icon brands style2 fa-linkedin sept-link" target="_blank" href={props.link}>
+                                            <a class="icon brands style2 fa-linkedin sept-link" target = "_blank" rel = "noopener noreferrer" href={props.link}>
                                             </a>
                                         </li>
                                         <li class="list-inline-item">
-                                            <a class="icon brands style2 fa-github sept-link" target="_blank" href={props.git}>
+                                            <a class="icon brands style2 fa-github sept-link" target = "_blank" rel = "noopener noreferrer" href={props.git}>
                                             </a>
                                         </li>
                                     </ul>
