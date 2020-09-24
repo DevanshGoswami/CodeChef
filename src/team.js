@@ -3,6 +3,14 @@ import './App.css';
 import Logo from "./codechef.png";
 import Logo2 from "./codechef2.png";
 import {Link,withRouter} from "react-router-dom";
+import "bootstrap/dist/css/bootstrap.min.css";
+import 'font-awesome/css/font-awesome.css';
+import {Card} from "./card";
+import './assets/css/main.css';
+import './assets/css/noscript.css';
+import './assets/css/fontawesome-all.min.css';
+import {Helmet} from 'react-helmet';
+
 
 class Team extends React.Component{
     constructor(props){
@@ -11,215 +19,143 @@ class Team extends React.Component{
 
     render(){
         return(
-            <div className="App">
-             <div class="shadow p-1 mb-5 rounded" style={{background:"none"}}>
-            <nav class="navbar navbar-light">
-            <a class="navbar-brand mr-5" href="#">
-                <img src={Logo} width="180" className="mb-auto" height="35" class="d-inline-block align-top" alt=""></img>
-            </a>
-            <nav class="nav ml-auto">
-            <Link class=" link_my px-5" to="/">HOME</Link>
-            <a class=" link_my px-5 active" href="#">TEAM</a>
-            <Link class=" link_my px-5" to="/events">EVENTS</Link>
-            </nav>
-            </nav>
-            </div>
+            <div className="App" >
+                <Helmet>
+                        <meta charset="utf-8" />
+                        <link rel="icon" href="https://avatars1.githubusercontent.com/u/11960354?s=400&u=a77c97db3237e61ac0548a9d887f35c74c7e595e&v=4" />
+                        <meta name="viewport" content="width=device-width, initial-scale=1" />
+                        <meta name="theme-color" content="#000000" />
+                        <meta
+                        name="Team"
+                        content="Board of 2020-21"
+                         /> 
+             <title>Team</title>
+                </Helmet>
+                <div class="menu-wrap">
+					<input type="checkbox" class="toggler"></input>
+					<div class="hamburger"><div></div></div>
+					<div class="menu">
+					<div>
+						<div>
+						<ul style={{marginBottom:"30px"}}>
+							<li><Link to="/" >Home</Link></li>
+							<li><Link to="/team" style={{color:"#713e20"}} className="active-link">Team</Link></li>
+							<li><Link to="/events">Events</Link></li>
+						</ul>
+						<ul class="icons" style={{marginLeft:"15px"}}>
+                        <li><a href="https://twitter.com/CodeChefSRM" class="icon brands style2 fa-twitter sept-link" target="_blank"><span class="label">Twitter</span></a></li>
+                        <li><a href="https://www.facebook.com/CodeChefSRM/" class="icon brands style2 fa-facebook-f sept-link" target="_blank"><span class="label">Facebook</span></a></li>
+							<li><a href="https://www.instagram.com/codechefsrm/" class="icon brands style2 fa-instagram sept-link" target="_blank"><span class="label">Instagram</span></a></li>
+							<li><a href="https://in.linkedin.com/company/ccscsrm" class="icon brands style2 fa-linkedin-in sept-link" target="_blank"><span class="label">LinkedIn</span></a></li>
+						</ul>
+						</div>
+					</div>
+					</div>
+				</div>
+            <section id="team" class="pb-5" style={{background:"none",marginTop:"27px"}}>
+    <div class="container">
+        <h5 class="section-title h1" style={{fontWeight:"800",marginTop:"50px"}}>Board</h5>
+        <div class="row" data-aos="zoom-in" data-aos-duration="2000">
+            
+           <Card name={"Devansh Goswami"} position={"President"} 
+           desc={"Devansh Goswami has great experience in leadership. He likes to design beautiful websites and works on data analysis."} class={"col-xs-12 col-sm-6"} 
+           img={"https://lh3.googleusercontent.com/pw/ACtC-3fCIWSS5wHpgLuO1IzZyBvKEQEWmAUvwYfXDYSj69ezvZ7kWccIqpqbL5veKiXF1Z2z3PWcygQoic77ReeuMmEbVqVrts3irxmR-E0c-NrltgnNQcj4_dWfHbuMzJJ8n-01p8a0JKnEi5BN0H_rGmVN=w963-h954-no?authuser=0"}
+           link={"https://in.linkedin.com/in/devansh-goswami-74590a187"}
+           git={"https://github.com/DevanshGoswami"}
+           />
+           <Card name={"Nirav Agarwal"} position={"President"} 
+           desc={"Nirav Agarwal is a technology enthusiast who loves to sit in front of his computer and put a dent in this world. He's keenly interested in the world of Data Science."} class={"col-xs-12 col-sm-6"}
+           img={"https://lh3.googleusercontent.com/pw/ACtC-3fAPeBwFKn8T9Ds8llfQlU71xw2su6t4J9AKNQFgzR1c-EJBwIRw8Xh8EApfKfXhpka5_Ht1x5Pdg6n7hp-miBgU3islq_8yCLqs4GhM_Wdk35Jj_pt-bOl84Fg-SXRRY5kcmbejeiBRBPeyMWbS-gs=w1033-h955-no?authuser=0"}
+           link={"https://www.linkedin.com/in/agarwalnirav/"}
+           git={"https://github.com/Nirav-Agarwal"}
+           />
+           <Card name={"Kartikeya Bajpai"} position={"Technical Director"} 
+           desc={"A word curious would do best for Kartikeya. Got a good hold on Data Analytics and Android Development concepts."} class={"col-xs-12 col-sm-6"}
+           img={"https://lh3.googleusercontent.com/pw/ACtC-3frPNm7WlONLvN13zke273pUJNVC_o824R73ytiWERk1fp5Bp5AFYT7OX6HYKRlqXRpNayRCVSqr0TxIe6m5UG4osxciUaMOdbfJAsiVcGwTDB2jNr8pd2RnZ_IMr5y5Zq6zm7gCSNPRYKNIYot3mgH=w359-h326-no?authuser=0"}
+           link={"https://www.linkedin.com/mwlite/in/kartikeya-bajpai-7687011a1"}
+           git={"https://github.com/k686"}
+           />
+           <Card name={"Anas Khan"} position={"Technical Director"} 
+           desc={"When approaching crucial problems, I tend to apply both logical and emotional aspects in a balanced manner. Thus, resulting in an amicable solution."} class={"col-xs-12 col-sm-6"}
+           img={"https://lh3.googleusercontent.com/pw/ACtC-3cSoTYA_6FYx_h_gaxiTOQ2m9tyuGvCjKTwM7Lcq-VUdmlUq84roIHGnhJsNyNm4-wxzm5h4NJCFRm8g_oV2H7PnnL1kI-SXe13GYt041F_6haMWrDZGhUoMCbsI36fm4j7YhMiJctYtbe9fk6T9lVh=w949-h954-no?authuser=0"}
+           link={"https://www.linkedin.com/in/thekhananas/"}
+           git={"https://github.com/chilloutwithanas"}
+           />
+           <Card name={"Hritik Bhandari"} position={"Projects and Research Director"} 
+           desc={"Hritik is a tech evangelist with a profound interest in Data Science and full stack development."} class={"col-xs-12 col-sm-6"}
+           img={"https://lh3.googleusercontent.com/pw/ACtC-3dYXRpD1-4N_R2G6zMDEj_lrjxXPaddRGaxCYCGcfP2TseaB27Yp4vo2v4bD-Hw-h5SZnQiOPq6Jpsb9pgYANFWO6XKeOU5cL_5Xn9Bj1z-rzmxoYuwYakJ78G1cexVpAiNcf5VwnCmqzTpqKPNbqvb=s954-no?authuser=0"}
+           link={"https://www.linkedin.com/in/hritikbhandari"}
+           git={"https://github.com/hritikbhandari"}
+           />
+           <Card name={"Takshil Mittal"} position={"Corporate Director"} 
+           desc={"When it comes to organising events I had an experience of organising some big events and believs in team work rather than individual work and I love facing challenges."} class={"col-xs-12 col-sm-6"}
+           img={"https://lh3.googleusercontent.com/pw/ACtC-3eVvL7WFRnsLXsbWhKWIxjknuEcJ8HmeDBjQsFuOJwdPlyrL89M0y2oSx0kHP2RVsPaSy8JvhxoID-1El0yRwlHX8OUq2zFAFEVu5n20KT_AdTknxNvF95n7ev1HMaq8MrDeNPFjKUNLNPOtgCSNKp2=w768-h774-no?authuser=0"}
+           link={"https://www.linkedin.com/in/takshil-mittal/"}
+           git={"https://github.com/takshilmittal"}
+           />
+           <Card name={"Sachin Agarwal"} position={"Corporate Director"} 
+           desc={"Sachin is just like a book; don't judge him by his cover. He is an easy-going, adventurous person who sees a world full of opportunity."} class={"col-xs-12 col-sm-6"}
+           img={"https://lh3.googleusercontent.com/pw/ACtC-3fAwBOQ-YdreMoUSJ3KdHdC-aPfFAWFbD0ane4INhroXRmAu5HmgRMeSFWrYQcgvPKIslhFVSbS7GKguZcYJHpE4JZSk-spg_xkxr0daBCp_U-LR6by23CLQbSvVEWlW_qarYQNTJRs2QkSIgeXrYYL=w969-h954-no?authuser=0"}
+           link={"https://www.linkedin.com/in/sachin-agrawal-11418719a"}
+           git={"https://github.com/sachinihcas"}
+           />
+           <Card name={"Aditi Patel"} position={"Creatives Director"} 
+           desc={"Aditi is vibrant, persistent, and a hardworking girl who knows how to handle difficult situations very well. She is passionate about designing."} class={"col-xs-12 col-sm-6"}
+           img={"https://lh3.googleusercontent.com/pw/ACtC-3cMn10A1V2gr7sJhDX3YPo0t4ErvPoJNR_sg8E173d331GxDVZgVXYFZTOPQUMpyO6pKT6GR9cMuOl4gFPqwajTlH1qNUja_fystfSvLoFcNh0zgVjJjr9YPw8wbVOZ-fT6x0zvzescqclbjGA8sOUj=w1024-h954-no?authuser=0"}
+           link={"https://www.linkedin.com/in/aditi-patel-49876718b"}
+           git={"https://github.com/Aditipatel02"}
+           />
+           <Card name={"Rohan Singh Rajput"} position={"Chief Editor"} 
+           desc={"Rohan is someone you can depend on when it really matters, he's quick with his work and responses."} class={"col-xs-12 col-sm-6"}
+           img={"https://lh3.googleusercontent.com/pw/ACtC-3cEPgvzF8Bf1E65-NqIhCWpAzRrJgEwtq7f11DWdwdnU7XufRy7wMkyIbEGJEi_Hhj_QcNvxowMKlcwO3K8EyZBzn-b3v3_PZq_cA7vWOq8WQVHfz8f0XGY1zuci_jP6kjqOqVVEgdEUmfJ6kw6sDhJ=w947-h954-no?authuser=0"}
+           link={"https://www.linkedin.com/in/rohan-singh-rajput-1b504b199"}
+           git={"https://www.github.com/Denx00"}
+           />
+           <Card name={"Yash Narang"} position={"Web Master"} 
+           desc={"With industry experience in web development, Yash is an enthusiastic techie who wants to expand his work into cross platform development."} class={"col-xs-12 col-sm-6"}
+           img={"https://lh3.googleusercontent.com/pw/ACtC-3fZ-XIa4NVvNaxbSF3ulhlk8GlwcwhQ_-q4qe1yRK6-JIImN0Jm69soDosDag0L7uDKuBcj4rurTpw35m1wUCWTD3hs_pq82X0WbQGVUc--Z6ELp-q-KGgTvMHOP2mnf_ukXYYG5O5ioe7BcNQbbJes=s200-no?authuser=0"}
+           link={"https://www.linkedin.com/in/ysnarang/"}
+           git={"https://github.com/yashu2001"}
+           />
+           <Card name={"Lavisha Gera"} position={"Web Master"} 
+           desc={"Lavisha is a result-oriented Computer Science major who aims to leverage her proven knowledge of computer aided engineering skills."} class={"col-xs-12 col-sm-6"}
+           img={"https://lh3.googleusercontent.com/pw/ACtC-3cIR64PinxYF9q-3T4VGMfJdjv14iFbJlMXR-zj03rakVl9CRMiBoIHkWjJoRekBNfa8oW_tpZRPaC2MZDsdLkqL-R00CW-g6M2QyPjtccCq-3I22ZL79lbmyjOdv1bj-bPAcyAeyvYTauHtpVq6b2p=w300-h297-no?authuser=0"}
+           link={"https://in.linkedin.com/in/lavisha-gera-0408"}
+           git={"https://github.com/LavishaG48"}
+           />
+           <Card name={"Prateek Ahlawat"} position={"Digital Marketing and Outreach Lead"} 
+           desc={"Being worked on and for startups, I understand how people interact engage and feel. I can network and empathize well with people and get people to say what they want to deliver the right content."} class={"col-xs-12 col-sm-6"}
+           img={"https://lh3.googleusercontent.com/pw/ACtC-3cM9QW0556RiyjDgwhi0PUGh4tf-GOEh73b1KpOPAU0WMPbDtG4o64irgEApfSlU2VoKJWKA0hLnE2QMvZIZXofSW2ktd7PZpll_h-_UTuhKKC3plTNPD9PsyXVk0DtJnT4n1rcQEk6o2hYCkKeIXsN=w960-h954-no?authuser=0"}
+           link={"https://www.linkedin.com/in/prateek-ahlawat/"}
+           git={"https://twitter.com/PSinghAhlawat"}
+           />
+           <Card name={"Dhruvraj Singh Rathore"} position={"Sponsorship Lead"} 
+           desc={"After working with many organisations I have learned discipline,patience and team work that helped me in understanding different people . I also have a habit of not giving up."} class={"col-xs-12 col-sm-6"}
+           img={"https://lh3.googleusercontent.com/pw/ACtC-3cU-U5OT99tSUAgURxbKW4ByiAbJH7kCgR5tA6RWLZnOQqPWaMBA3zWtTk9KlYaNm6GWjjh63UOssrNUxHYlnquxQb9bbimAU9Ovg76WJxVakBs4O6jm71mh2DHNnjImkav18ci-UHe0xEGAJUkhaB7=w769-h815-no?authuser=0"}
+           link={"https://www.linkedin.com/in/dhruvraj-singh-rathore-0a1171173/"}
+           git={"https://github.com/dhruvrajsinghrathore"}
+           />
+
            
-            <div className="team">
-                <h1 className="text-center" id="about">
-                                    Board
-                </h1>
-                <div className="contain">
-                    <div class="card-deck text-center">
-                        <div className="col-3"></div>
-                                <div class="card" style={{background:"none",border:"none",marginBottom:"30px",marginTop:"30px"}}>
-                                    <img class="card-img-top rounded-circle" src="https://lh3.googleusercontent.com/pw/ACtC-3fN_I1N7ceC-s1SGIAmHQhWy292AZaTlYyhRxqTC2dNP28HrqU-Y6w1gCX2qKAgbm8R3yJ1vN52iEKM38cWCwkCiyfR58HdIWI63No0nA8sxnRZwdaNziezQ5EdS08vuORdMNVApT4MDOKfzyK0d7Nf=w938-h930-no?authuser=0" alt="Card image cap" width="100" height="250"></img>
-                                    <div class="card-body">
-                                    <h5 class="card-title">Devansh Goswami</h5>
-                                    <p class="card-text">President</p>
-                                    <div className="link_my">
-                                        <a href=""><span className="fa fa-github mx-2"></span></a>
-                                        <a href=""><span className="fa fa-linkedin mx-2"></span></a>
-                                    </div>
-                                    </div>
-                                </div>
-                                <div class="card" style={{background:"none",border:"none",marginBottom:"30px",marginTop:"30px"}}>
-                                    <img class="card-img-top rounded-circle" src="https://lh3.googleusercontent.com/8NSe0dzsCAcrhIPUH-yNutAorJfmF0qw2do97CJAsEKaLA_whcGXsDV2DLuZmRFIcjhak5i_pBcVUqqU-ptDAR0LQyvkq4h8coPupejCc8fA17w96jWqmc-StMwAbEUhaDG4xqh1nrRkXOO061Hp845RCCheOlMuVo1AtKrjwDtiOWs9neoCrklUmjWEEqSjztiWG2JxXFXkKDKloo2SQwc6nsrXMHIFXQi23fSaLdm8r_U4ZafzuyN8Gc2KeHiFXgbmq1X3TaO9tYa1epiJTagwCm6iKfdGKlf-3e3zzo2mMkiraAexLcpWtR6skzTaAUDT-TkzJklYNAljnMgElNippyanZQAA6lP-f3x2UnWp74tqpJoCOnFAfw2DQVwvQQA_gVJlEcmZBEHdwrt89mv-RcthuL3DVeNdZz533V-ZS-VZtaX43wqr7qGBw-OpSICLMkaCDpwyE1Y6683CF8WYKY1FKUN4aDd3KlHhPxjUipn3dF-dGGM5M38a0rfV0O3SxWEPWx6ViHDSMesHJxLQmqn39SfOqxoZivWDIlj9_jl8qjm7OcRLbxPA4jlEwfHtDvUqyTeLBfjZPekvAmMdv_pvzq-UD1g7Al73k4LY2BxIgrWRvoWq68fXKIOloZjVK1TsyaZK8ABrKNARRTVSA6H-aHvbWMDSsWrWu04PCWwTZG1aCd-1CQDq=w1006-h930-no?authuser=0" alt="Card image cap" width="100" height="250"></img>
-                                    <div class="card-body">
-                                    <h5 class="card-title">Nirav Agarwal</h5>
-                                    <p class="card-text">President</p>
-                                    <div className="link_my">
-                                        <a href=""><span className="fa fa-github mx-2"></span></a>
-                                        <a href=""><span className="fa fa-linkedin mx-2"></span></a>
-                                    </div>
-                                    </div>
-                                </div>
-                            <div className="col-3"></div>    
-                        </div>
-                        <div class="card-deck text-center">
-                        <div className="col-2"></div>
-                                <div class="card" style={{background:"none",border:"none",marginBottom:"30px"}}>
-                                    <img class="card-img-top rounded-circle" src="https://lh3.googleusercontent.com/wPPp-K-HSXvKvpbC_mLBbwGZ50LRf0jU95Mvuo1RybaQ3iNpVRltZ31NtfObdQi0o01grjT2MakgNnfbvtCUK6pjUO4njjJ1jJEeFrek5Ohxc-f9-v-i9RhYb0j_IEIxXl9f7Z4_k0X52cMs8WmdPHKK-x831IamW3-p1ozInT1pDzepjve-2gQ5TEH--UdS3v4n9M3CFnNNRXNA9DpMk1H38iOipxRpUvxoZ7UjwS2Ud5dgs3WINPP5Vi2GcY-0KAoiX2IbvOSqjR7uKmrC7nhdigar_MZXDlqDAlcw40Z5twDSNv6NA3SdyJMosoLIl49nh7uh4EjWFW4FwnoiuL6ZXT930lX_VCIzq3uccqDDO7YOG4FNUT-dSVxt3bamZ1PR79poAEKQ6DYS_Er6vFpifwWyZBFkEXXofeYGQ8H5q6z8us_EQZJ_Q26hpYMSyVXHHz7SJNb09nlVk1gm5xsozK2ItrTjHVPoWWe09QYhriX0m878V1VfGIj3bSD4ODopFUtS-Uo8GixzN4bCWFH7bH2ArUnowvJHbLIOSO9hLM7pvuBrP2w5o8mccpQCBuDMxa_PbtgZTo9QP0Rw-2Kbu8_TbCHRKEaXbfd_PqZ1fpoCPkipahtxDnYkX1z95kTMQEaFdRXVTpa2wjBy1vcj4bqLskJ86m9suXAc8ItTE_Yhx9URYb6NyUKA=w359-h326-no?authuser=0" alt="Card image cap" width="100" height="250"></img>
-                                    <div class="card-body">
-                                    <h5 class="card-title">Kaartikeya Bajpai</h5>
-                                    <p class="card-text">Technical Director</p>
-                                    <div className="link_my">
-                                        <a href=""><span className="fa fa-github mx-2"></span></a>
-                                        <a href=""><span className="fa fa-linkedin mx-2"></span></a>
-                                    </div>
-                                    </div>
-                                </div>
-                                <div className="col-2"></div>
-                                <div class="card" style={{background:"none",border:"none",marginBottom:"30px"}}>
-                                    <img class="card-img-top rounded-circle" src="https://lh3.googleusercontent.com/MxEyEQemZV8Htu-PuLnuIPzMZGSypMj3z1CbE0zEbgKfnQnOqqjPXkUKpEjBkwuB_RJIbyCFGgoEUyaXLtVePmqypozXLn_ntD3ikQLFjDT5UgYkQ0sicxwjSQYQL1aFYcmbpZC7f40022cRvllmTLH6dDeWhnEA2dlxeJW2ysL_Rcs5bp7p8HTLcKktFow4aPjhF5PpBVsq9ZvgUR8-U_YkOyDyGXMtNhlYznPgx1t4N6mbsI6EsXe8PzGPEqHlSuc1YA4pLvg-rxJLD-PcGmzrCk8WqQRyShSS4KtFHN8Qqxmf2xeSS-cccUTbKUfqcyVOFlO8TTOHLH_4N0X0TtFmIk-3VMuqwMnuQrx7eBInCkOwUeg1-QFg4u0yK9TyZQq2c5s3FuC8zBqKxHp4Ed8zL4rUHzcPon6tke7i9vBB9jsM5wCeAgYP1nlsKV9bO2cIwkq6P1RUiqERA61VQJWFUs5dxEjL_e7-tbrHeLE8FTAjPMH3BLLSLskn_Lm2muBr8nhtrVoS9oGFcdibEMZpOkBXzg6N4AMffFuGp_COGeCo6m3yALK5gGEE3vq3BY79jW1bukn1Q0VxGRSQFA2W2BI9nOni1fSR6pUbpa2XTMha-26Sc8O3Sch0HURBn6oDtnXSU9QSMDNQ2j8mJ6VrNLqeDAgY702R8vgsfJy2ouM-6RqmNsgWggy3=w974-h979-no?authuser=0" alt="Card image cap" width="100" height="250"></img>
-                                    <div class="card-body">
-                                    <h5 class="card-title">Anas Khan</h5>
-                                    <p class="card-text">Technical Director</p>
-                                    <div className="link_my">
-                                        <a href=""><span className="fa fa-github mx-2"></span></a>
-                                        <a href=""><span className="fa fa-linkedin mx-2"></span></a>
-                                    </div>
-                                    </div>
-                                </div>
-                        <div className="col-2"></div>
-                        </div>
-                        </div>
-                        <div style={{marginLeft:"725px",marginRight:"725px"}}>
-                        <div class="card text-center" style={{background:"none",border:"none"}}>
-                                    <img class="card-img-top rounded-circle" src="https://lh3.googleusercontent.com/eVcQj2BenARUPxXXLVWVS1a4pbHHwDaqNYYV2PUYveBdCDM2srJmURkVz00ccitspGh-O_eB4wYBpUZNWoiviVQeEwFtBmS8I55ZVe_QfRjUrjKDyJCiT4flfXxKnFLybd8VcgazStoV8sEm7l-g7R1rHzXbugH_bUqa9YZuvX30aMbfIamCJWestpwjJrSaBInR-BnMbbNwYBUFrPtru7P2S9ZPDVBmaK5mUuKroHceqAet-6eZJPZB-MGvhsxf2cCRc4wJ8Z1UoaLXMCD_5Vv4RCUbZy3astfeAdChb3y6bvlJ61UlYKattAwrkYT_XsW0T6JFyFHZj7uwUG9APIPQIwfv78L4wgJiZLOM9n8h77Bx3lb6-80StX2E0l_PTkngSwvLWa68nERxqHIO_sUaMaUOw8eqdYzq7SghprbfKIonATt6b1sglGkkI2wOAzYaLZ0aXruleFzC_pJufSqjGJiGeaCRlOTxP-gv7cMIXj7mzRZvEo_fG-cPZk6gN844izM3QCzeN1i6Aqz0U0QsLGvyMcoOnPk5z9eoKkyF_CYZOvcwM89HDpu4ODxt3kCf-i4WYqz6DEhusYGtO20n62ustHw1FA9HjPXXzxIPx55KXm-CqPgY9pCgdf0qRUYATq7RV197ZKgjnWOgjucRGNE1sdDD8x4EBH-naSjFO_AbUAheHWdLidlO=s979-no?authuser=0" alt="Card image cap" width="100" height="250"></img>
-                                    <div class="card-body">
-                                    <h5 class="card-title">Hritik Bhandari</h5>
-                                    <p class="card-text">Projects {'&'} Research Director</p>
-                                    <div className="link_my">
-                                        <a href=""><span className="fa fa-github mx-2"></span></a>
-                                        <a href=""><span className="fa fa-linkedin mx-2"></span></a>
-                                    </div>
-                            </div>
-                            </div>
-                        </div>
-                        <div className="container">
-                        <div class="card-deck text-center">
-                        <div className="col-2"></div>
-                                <div class="card" style={{background:"none",border:"none",marginBottom:"30px"}}>
-                                    <img class="card-img-top rounded-circle" src="https://lh3.googleusercontent.com/tSglgFrJxtofoM_F7CcVVzepzx2zYwUi6iUsjQSgrp-r-AJmNWCTBUjbfx4H2pKzI1eZFsEuFcsUM2sZpdntQ2LTE93vsYeMFy5_EgdbcwIT9EeJUMCyZc9I7-JrrSf_XMo3JGRp11OH5KAkHjjmxLlBtm8Qpsja3JKPuMZAYcMikshHWKAEfBXwqf7qsL0436EnoKPnFZYiePZ2PhxkiuXYTAzm3ugsyVblOLc8GW9OrHZ5pPKT4nwQtBymsIiJQ0Gg9d35f7N4iupn7my_eECmYghQQgNCL_0Zvskcw8LMdZ2iGclj1TTqxh1kJSt9h8UPE_U7NXD16LVcSY6JfAMH1a6GRHzRkeZm0kjTMdmeLB2YJQMF53pTYNikPtmjPLWGEOqL7sFySq0A71pNvuTcvVpEb1xJ9sSd9mYuQ_RcTzVGPKB50J0DE03Ieiq54UXcasy64GJdDXP4ZL4aW36k1A2txKely2FP1-EJFP-9POYcVEprwpFuFiBEbE835Du-MM0KC7-58vGjNFmDy2sYWF2561iM5-zhfMM8GbUmGhF1iYWiPksFkCTsVgtDhTc0Olf6SmPxvDWQozt1n9LwRss9bPm1bcMMAl0xB9lxf2Wll8UrextJ8Vc2uz3Kd7qZONoHI_8AkWtZnMA1PXOPRwADc0ilpCtiY4C64oIyrq3J8prl_vLcSdio=w768-h774-no?authuser=0" alt="Card image cap" width="100" height="250"></img>
-                                    <div class="card-body">
-                                    <h5 class="card-title">Takshil Mittal</h5>
-                                    <p class="card-text">Corporate Director</p>
-                                    <div className="link_my">
-                                        <a href=""><span className="fa fa-github mx-2"></span></a>
-                                        <a href=""><span className="fa fa-linkedin mx-2"></span></a>
-                                    </div>
-                                    </div>
-                                </div>
-                                <div className="col-2"></div>
-                                <div class="card" style={{background:"none",border:"none",marginBottom:"30px"}}>
-                                    <img class="card-img-top rounded-circle" src="https://lh3.googleusercontent.com/CkvTcpq9FBfo-STeEy9LxDSXr4AVPPwkMAYO5xjipdvp_22NTGnOxeCe8AGbjMjoncoa3RahxkF-iTBxuMCPDTp9PHAcjOPutBh3LXDsTgVeoR3vOcifaAONWtoffKj0aMmvizLUFHifceWsR6hTCDtv_u_tfS_lacH8Dmf3mIZYgOz5AlmAJVfoARu-A5LB-_-_8ktTjnmSYao6LehvtdrclaQ_0_BDVSuT6i855EUvKcJAH6omXMPjpAOZ98_ZXWHnCF93OSKisziBwWnUWRz4Hdc3OhUBtNiihtKoZ167YwqiU4kr8HjpZDGrJikGybaPSyoR-85l3FAk6OS4im3bR7eam_-Nsx7ldKmLYNiYUYVxYD-1zmm8yqmicvNYn-SH3zvhxTrbUUbogC4Fnh7524JHvL4Je8ZWR2IbxxHFeOIBvz19pP1EiUDHrJq8DiFU0DIOdQIm0_XKAx-06RBuL69hOkztlafqHuLjz3Ov1L8fKOBgXXupROxNdHRO1n_3aiH36Yw2Gb084565pXexA8XF2yfR4DvSEhC1mn5CmhGPvNUVFaKTGsv2G9jqdKu3lYU-nyszkaukpZOc1sQu-OnQgD5vViynqYiSsGUTgBnj8KF69GOtnehJ9z4UaMAXnC9cQXGzqTT1EkJmRwv0j7OuBn0_44ZpiIVUiO-1uOvBXCB4xmy7ci9I=w985-h979-no?authuser=0" alt="Card image cap" width="100" height="250"></img>
-                                    <div class="card-body">
-                                    <h5 class="card-title">Prateek Ahlawat</h5>
-                                    <p class="card-text">Corporate Director</p>
-                                    <div className="link_my">
-                                        <a href=""><span className="fa fa-github mx-2"></span></a>
-                                        <a href=""><span className="fa fa-linkedin mx-2"></span></a>
-                                    </div>
-                                    </div>
-                                </div>
-                        <div className="col-2"></div>
-                        </div>   
-                        </div>
-                        <div style={{marginLeft:"725px",marginRight:"725px"}}>
-                        <div class="card text-center" style={{background:"none",border:"none",marginBottom:"30px"}}>
-                                    <img class="card-img-top rounded-circle" src="https://lh3.googleusercontent.com/oEtWhj5bT_PnTygbdaeOZSbGAoiMNvRK_XxYIm5x2nPsSfYAYEouWrobPncha3qHWnXxw-XBl1rKiU2Qv8MdK7bKgr1xwmf3RsRYHFZSY9g123x5soHUJgcfwkjRrYpX79onybc6Ux18vmDxvpbFO_4G3MZAm_RDHekbofmIciPkeDApgsJMZkVRmxFMDJyLyF7Ugzgd9ORu7UHJsF9AyoVXxIqqNH4XWsXoSA8JGmKuEwasz51UM63HC7dpb7mhMNlevizPEg7EhDFfgnm8mP5oRoUDvkUwZ0ADus_e4c4FQhR834jCcf6mJMTx8GG3caEMe4AzeGF5WUhtJNir7gEdurI1n9ejOlINT5yYO3Tv951QYAwmjjJLt0jPHQhODfKcviZ_avjyO42m2BiPnisTui7DVYL9ByZkrprsfO9Dy91LJXYSLgq_20qOVrm50Uq1qzsIv06iFW1n6eMNYWexXlGncXNo7RUGjwX6uXr6vrxXEvzA4eNuHB_Dwzz6rTzFUjPXJkhWIPQlYPD418dD1RerOpYWBq_5GGB4F_fJ4OUd_-aIn8R7cXppmQq9xQnughy4EL_3XfecGiTGfqJobcFz5OeOpjCkaatXwzs7BboaGnL2J2GD5locih0mHZD2fFLHj1GPnv-D2OnlXM18_NtbHHjUu1r-5cyedykEPVCTAO_hMM9EYhQu=w1051-h979-no?authuser=0" alt="Card image cap" width="100" height="250"></img>
-                                    <div class="card-body">
-                                    <h5 class="card-title">Aditi Patel</h5>
-                                    <p class="card-text">Creatives Director</p>
-                                    <div className="link_my">
-                                        <a href=""><span className="fa fa-github mx-2"></span></a>
-                                        <a href=""><span className="fa fa-linkedin mx-2"></span></a>
-                                    </div>
-                            </div>
-                            </div>
-                            </div>
-                <div className="container">
-                <div class="card-deck text-center">
-                        <div className="col-2"></div>
-                                <div class="card" style={{background:"none",border:"none",marginBottom:"30px"}}>
-                                    <img class="card-img-top rounded-circle" src="https://lh3.googleusercontent.com/3hupvrc4OTW1LGR1GRS9gw88V1l0dxlWPzIS13fSUpWmKVoJBDXloAB-mR72UFMRGx53LGycJ4dZSkE81A2XbtKVuSpH_iXujWO47lQ4Dc49fQKpa0b-NGaAGQ5Sep1ok-CFqjrahKOwGjghs-p_lCurSd6M_YCUoJveUeKfttrB058geN34hcOxnuqVt5nJZ8b0FG4uubvaSP5Ycp4ssdE6padPu7w3jncbnXXr-GbVMjscS7ZTG-IT93pCwvQl1BOhiYhCZbg80N8-rCC_PFK776dzdDJT7-wIne2qNjybOaxjhef8tDnMj_RJ_X5I2SEQMIK9RSBAELPFADUXDJJito7fk0BnmOH5n_aXOYNPN1J4R2uVC4ZG-wVe5r5a-am7OUXg_DRzTs6e5MJy3FLXF0qavqgHbxDYHt7yteSpf-nTmAZG3izgvmQN551Ep6TyDNYT4JAA1Ebe-fRxMBma579ujr5DRRV8bosRUO76uBPqbcOpSuAr4t8nwgLP6jPtOBhYcNf1BF5Ye6wKYOAOAwdSEJPwK562zQJWoyKbJJK17GtIUgY5zbxmDwGms0aviq7E1m1Wi1ldn58-4R2Nbpr83I6CRWRRSJhY-avAY0zO6hPgwYkbl6yx5cg4MI_V9ej53BrAr_bzuJVfyWUvXkbGQCdLRyEbchXEBmhjJEqh75m0bp4OXy8z=s200-no?authuser=0" alt="Card image cap" width="100" height="250"></img>
-                                    <div class="card-body">
-                                    <h5 class="card-title">Yash Narang</h5>
-                                    <p class="card-text">Web Master</p>
-                                    <div className="link_my">
-                                        <a href=""><span className="fa fa-github mx-2"></span></a>
-                                        <a href=""><span className="fa fa-linkedin mx-2"></span></a>
-                                    </div>
-                                    </div>
-                                </div>
-                                <div className="col-2"></div>
-                                <div class="card" style={{background:"none",border:"none",marginBottom:"30px"}}>
-                                    <img class="card-img-top rounded-circle" src="https://lh3.googleusercontent.com/CZLHtZ4R2RcpsGSZoGqtpUSxePd3ve1rzbqNQ6IvdRF8yWVj8dUIPZlKmNaskJoHzfEYFggvEI2uljavP-RRYkaCC-gs-_rzlNoZSUVHlSiE4m2Vw6Ou4hdHrrBOqqCdG85QjtJfA2rjGh6dmLYyVHCsEmHJCdnVazffVllxSVQvZqaY_3s3LQmr8vweUJJqKyq10igTkEcF75g4ZvqsFNKpg-4Qr2MwUX6VB11YBLWo2fH_ACjrtpKbP4R9wDeIDTuGoyjMLQ-0erJ5y_KxnGBxRKJ8R52LDCk26nAZ7gE0tEcNk39gfKxV9oH8fqvhMcLHRm7ydcuVJVL5bjnTmukostKlmX9nQoZ2aSQOpAfV5Y0Q4nm1UoprMDAFoOuBNqOpOrKEYsm4aBZXUEWiEfQcTVZ5YGASS363okZuOXJ47ZB1TTGYSOiAnvOeUjClAI9CD8_gCZs-a7n7mGA1-phFAisF8A8oAWCiJQ21q-0nk-iSgfICeiYfOlSKjKtemjaduwtdgrSdrsF55dAfPnz1uX3qtU5MqiFwCQeJ6MwuDB08gxUyhZgMeUtCrysTP_VR-4vKOTaragLJEDbO2OAmVE9J3-IqAcQPf4EAi5XfUzlPxsiuq6wy38ykQcTz_G94cIrOG0-4zi4BZ65F1rVNnJWTv4LgLoprUeMccfMgjsD06OKvPzDEK19l=w300-h297-no?authuser=0" alt="Card image cap" width="100" height="250"></img>
-                                    <div class="card-body">
-                                    <h5 class="card-title">Lavisha Gera</h5>
-                                    <p class="card-text">Web Master</p>
-                                    <div className="link_my">
-                                        <a href=""><span className="fa fa-github mx-2"></span></a>
-                                        <a href=""><span className="fa fa-linkedin mx-2"></span></a>
-                                    </div>
-                                    </div>
-                                </div>
-                        <div className="col-2"></div>
-                        </div>   
-                </div>
-                <div style={{marginLeft:"725px",marginRight:"725px"}}>
-                <div class="card text-center" style={{background:"none",border:"none",marginBottom:"30px"}}>
-                                    <img class="card-img-top rounded-circle" src="https://lh3.googleusercontent.com/bYwaelsxLD9yZog2zwgksqSrphVUjDXP7MtRjBunUN33mn-9_MxYh8h0rQSm7GiUQ-tA-PsCIRU247qE1RXiJC3oR73MkoIAhyc8stPdJabaZUAvSvrlPkWwN-v6DurHrEbOSfLV148n8FfT3pp7Y4XxZEnkXVwBsP8bEoa8pCIpZtN91jwaVofhwTHYoIbT_0mL-1CY2nboKpwCWx7W8RIByaLp92uOPzXD_adDzXfWSqfhRlOrYY8ruzorI8fh4MqjmQVwU-vydqT8CW2RyGoxagGp9qFCH2EZBOPp7P3pY3mwm75f4940HSTKTT81Ieoyg1IFysMC6Za0HV1GvA8mA7HK2b0jx6Ecd3xl-s4fCijiNjlbGVuMZK5b7W7OObpJ5Y2Z9RElNgTojJ43lUBSHxa77KyD9n5d74OC3h87bbddFScB50b1LxcZa-bUNBj9bDZ5PD1qYN8O6f9LlVqNl9ShU-5dX1pABG3cMQmi7G2s0s46NFNcOSe3ro5C6f5VYIFvB3sU3i64wL3v3Hi7fBhLIFeiQ0Ylc8UpiDigVz1ls9IOIFkcFN9JsFRpHk75KISvycHuXOq0mReUNkq09sFLCS4bhYMfJpArTWYVaa3oJ6_-9Bd1s1F7HiUWZi6qZ7aqNC9OlNIB3xSv31w8NvWZ-7e6ye54D2k3FJ_dj0LNGOHixukRk7Yu=w960-h968-no?authuser=0" alt="Card image cap" width="100" height="250"></img>
-                                    <div class="card-body">
-                                    <h5 class="card-title">Rohan Rajput</h5>
-                                    <p class="card-text">Chief Editor</p>
-                                    <div className="link_my">
-                                        <a href=""><span className="fa fa-github mx-2"></span></a>
-                                        <a href=""><span className="fa fa-linkedin mx-2"></span></a>
-                                    </div>
-                        </div>
-                        </div>
-                        </div>
-                <div className="container">
-                <div class="card-deck text-center">
-                        <div className="col-2"></div>
-                                <div class="card" style={{background:"none",border:"none",marginBottom:"30px"}}>
-                                    <img class="card-img-top rounded-circle" src="https://lh3.googleusercontent.com/R2lcQRa_A-clpVO_9lZ681hPE8mtvODsQl5Kx4-9_cS_E2HwM2LUtagLarla4LfS67DB0VY7Fc8UQkowgFajiPT3tUO4IGLnG6KfmvQSDmiPEqv0ZYuGBYFVOnbVY9uJey5d4sqVI8PqeWDmYDFsezwxAkiigB2O2VVbPC2zHp14c27YIN_Fy9p-HujXu_o3AKR_K_alLkafuQ7RwnPFdNHD9en0P-cmDg9KdXNT_SwuhoBkHMo4HVhkUMMkEu5lf-mqFR7dDabTh3xXApixVvI8X9e1aLPFbSFqhS8hBHpAmurvh9ZXRRgkRkm4HGS7CUGgO2IbblzWDriPtP4w0uE3ss7xUb0EnPW9o9eEYbYJYOHzbzmzYVQvOUGWE5WMkZCANv5T-qCtH4OyKoADU7onT2e3_axLfzIvSOxIcVgFGOvOmJjQqFHAJIBhvvRO1jCjkwOFILLzuaNafLLFJ2kZtCHWusVCR3FxmH9JqPK4K52lUHGSYO6n7zlJb80dy9mLHDc1g21JVV3PnnlFnGfK0zw6SxKkcYS2Tzfjk6PPu1dKQ0KvbHmIIYrweCOz-5LA9Q7RJItOJxKxj0qBIiSn3n4pa-qDK3zXQ7tmmVW9JqjW2D8dPtfQiyZCS6fQ96BCWa6nTb81TrO5Xmr7OhZv1vUxD9iO9DCocZCQk-Zxb09TkSe0kEElKTkx=w994-h980-no?authuser=0" alt="Card image cap" width="100" height="250"></img>
-                                    <div class="card-body">
-                                    <h5 class="card-title">Sachin Agarwal</h5>
-                                    <p class="card-text">Sponsorship Head</p>
-                                    <div className="link_my">
-                                        <a href=""><span className="fa fa-github mx-2"></span></a>
-                                        <a href=""><span className="fa fa-linkedin mx-2"></span></a>
-                                    </div>
-                                    </div>
-                                </div>
-                                <div className="col-2"></div>
-                                <div class="card" style={{background:"none",border:"none",marginBottom:"30px"}}>
-                                    <img class="card-img-top rounded-circle" src="https://lh3.googleusercontent.com/9VeodCCUtlu-ncCY9QisXKj-9_o0ud-FjPFuMY8jX0gqkuKA4vGEt04bbe9DpncBrHUdzxgQK7shRNjuhOF7zPDZAsfqghhtarOJzLsba9B_vTk14HXgTgTp0AAq1cqzV2oxBRjKFClKkpsPnfhxeD0P5M6ap7B23tuEu39Ouy7cZIRtZFFCKL8C74nzaW6fSGiQHt8wxku-th_-__LEpMes4Iehgsfq_95BFX5_Sc4RMk_TEt8uZ-Y-2DP-c23zwelRVVPNmdTm5oMnsUs7PW-sxnJr2H-3rJUcgZTNnDnV1OEBP63A3UwGIKV0qsJWY4CNvGcKRvXdLYU39WOHyXsNJstqTuY_GSifhRVCgpntx9xNjpAGxPDvd_W5H3huMUG-QAlPA2LLGLILLsWpxFo2CP5d0lboWIdeMXv7S6aqJ8wjmyHs5xA0SnAlo_4IRTd2GZDtAH51PxJ-2Z8tGNhhVYi8qsiXxAMKMAfeOJ_Ka9NWLrgJYvxViCFQ1hei60uCLiAz7aM423oyQzPLxgyWn8Z403IMb5zjNfRz7WnNk86ITomIi4av9OZMMYug038YL22JfSSLPgcPsOszwSrRc3qP7kXgFgSKZK7GZ5m4A1TdemwR-lOfmVSGK37BcIaHtn79IkxvH5cN2HGCzykq9v-Uwjv1MSvvtm6hV2F3not9W9o7iSmsrtLW=w769-h815-no?authuser=0" alt="Card image cap" width="100" height="250"></img>
-                                    <div class="card-body">
-                                    <h5 class="card-title">Dhruvraj Rathore</h5>
-                                    <p class="card-text">Sponsorship Head</p>
-                                    <div className="link_my">
-                                        <a href=""><span className="fa fa-github mx-2"></span></a>
-                                        <a href=""><span className="fa fa-linkedin mx-2"></span></a>
-                                    </div>
-                                    </div>
-                                </div>
-                        <div className="col-2"></div>
-                        </div>   
-                </div>
-            </div>
-            <hr className="my-5"></hr>
-            <div className="footer">
-                <img src={Logo2} style={{marginLeft:"825px",marginTop:"30px",marginBottom:"50px"}} height="77" width="250"></img>
-                <p className="text-center"><span style={{color:"#713e20",fontSize:"18px",fontWeight:800}}>CodeChef SRM 2020</span> <br></br> <span style={{fontWeight:"bold",fontSize:"20"}}>©</span> <br></br> <span className="muted">All Rights Reserved.</span></p>
-                <p className="text-center" style={{fontWeight:"400",fontSize:"22px"}}>Contact: <a href="mailto:codechefsrm@gmail.com"><span className="fa fa-envelope fa-lg mx-3"></span></a> | <a href="tel:+918791615165"><span className="fa fa-phone fa-lg mx-3"></span></a></p>
-                <p id="line">
-                    {"<"}--------------------------------------------------------------------------------------------------------------------{">"}
-                </p>
-            </div>
+
+        </div>
+    </div>
+</section>
+<hr></hr>
+<footer class="wrapper style1 align-center">
+					<div class="inner">
+						<ul class="icons">
+							<li><a href="https://twitter.com/CodeChefSRM" class="icon brands style2 fa-twitter sept-link" target="_blank"><span class="label">Twitter</span></a></li>
+							<li><a href="https://www.facebook.com/CodeChefSRM/" class="icon brands style2 fa-facebook-f sept-link" target="_blank"><span class="label">Facebook</span></a></li>
+							<li><a href="https://www.instagram.com/codechefsrm/" class="icon brands style2 fa-instagram sept-link" target="_blank"><span class="label">Instagram</span></a></li>
+							<li><a href="https://in.linkedin.com/company/ccscsrm" class="icon brands style2 fa-linkedin-in sept-link" target="_blank"><span class="label">LinkedIn</span></a></li>
+							<li><a href="mailto:codechefsrm@gmail.com" class="icon style2 fa-envelope sept-link"><span class="label" target="_blank">Email</span></a></li>
+						</ul>
+						<p><span className="sept">&copy;</span> CodeChef SRM: All Rights Reserved.</p>
+						<p style={{fontSize:"13px"}}>SRM Institute of Science and Technology,<br></br> SRM Nagar, Kattankulathur, Chengalpattu District,<br></br> Tamil Nadu - 603203.</p>
+					</div>
+				</footer>
+
             </div>
         );
     }
