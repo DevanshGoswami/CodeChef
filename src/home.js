@@ -119,7 +119,7 @@ class Home extends React.Component{
 				<section class="banner style1 orient-left content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right" style={{marginTop:"27px"}}  data-aos="fade-down" data-aos-duration="2000">
 					<div class="content">
 						<h1 style={{color:"#713e20",fontWeight:"800"}}>CodeChef <br></br> SRM Chapter</h1>
-						<p>Cooking delecious code since <span className="sept">Sept 2019</span>.</p>
+						<p>Cooking delicious code since <span className="sept">Sept 2019</span>.</p>
 						<p class="major">Boring coding sessions, low grades and hours of debugging... life feels off right? Well, we have something to help you with this situation.</p>
 						
 					</div>
