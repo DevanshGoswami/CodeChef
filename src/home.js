@@ -196,15 +196,15 @@ class Home extends React.Component{
 							<div class="fields">
 								<div class="field half">
 									<label for="name" className="sept" style={{fontWeight:"bold"}}>Name</label>
-									<input type="text" name="name" id="name"   onChange={this.handleChange}/>
+									<input type="text" name="name" id="name"   onChange={this.handleChange} required/>
 								</div>
 								<div class="field half">
 									<label for="email" className="sept" style={{fontWeight:"bold"}}>Email</label>
-									<input type="email" name="email" id="email"   onChange={this.handleChange}/>
+									<input type="email" name="email" id="email"   onChange={this.handleChange} required/>
 								</div>
 								<div class="field">
 									<label for="message" className="sept" style={{fontWeight:"bold"}}>Message</label>
-									<textarea name="message" id="message" rows="6" onChange={this.handleChange}></textarea>
+									<textarea name="message" id="message" rows="6" onChange={this.handleChange} required></textarea>
 								</div>
 							</div>
 							<ul class="actions special">
