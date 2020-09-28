@@ -83,7 +83,7 @@ class Team extends React.Component{
            link={"https://www.linkedin.com/in/aditi-patel-49876718b"}
            git={"https://github.com/Aditipatel02"}
            />
-           <Card name={"Rohan Singh Rajput"} position={"Chief Editor"} 
+           <Card name={"Rohan Singh Rajput"} position={"Public Relations Officer"} 
            desc={"Rohan is someone you can depend on when it really matters, he's quick with his work and responses."} class={"col-xs-12 col-sm-6"}
            img={"https://lh3.googleusercontent.com/pw/ACtC-3cEPgvzF8Bf1E65-NqIhCWpAzRrJgEwtq7f11DWdwdnU7XufRy7wMkyIbEGJEi_Hhj_QcNvxowMKlcwO3K8EyZBzn-b3v3_PZq_cA7vWOq8WQVHfz8f0XGY1zuci_jP6kjqOqVVEgdEUmfJ6kw6sDhJ=w947-h954-no?authuser=0"}
            link={"https://www.linkedin.com/in/rohan-singh-rajput-1b504b199"}
@@ -101,12 +101,7 @@ class Team extends React.Component{
            link={"https://in.linkedin.com/in/lavisha-gera-0408"}
            git={"https://github.com/LavishaG48"}
            />
-           <Card name={"Prateek Ahlawat"} position={"Digital Marketing and Outreach Lead"} 
-           desc={"Being worked on and for startups, I understand how people interact engage and feel. I can network and empathize well with people and get people to say what they want to deliver the right content."} class={"col-xs-12 col-sm-6"}
-           img={"https://lh3.googleusercontent.com/pw/ACtC-3cM9QW0556RiyjDgwhi0PUGh4tf-GOEh73b1KpOPAU0WMPbDtG4o64irgEApfSlU2VoKJWKA0hLnE2QMvZIZXofSW2ktd7PZpll_h-_UTuhKKC3plTNPD9PsyXVk0DtJnT4n1rcQEk6o2hYCkKeIXsN=w960-h954-no?authuser=0"}
-           link={"https://www.linkedin.com/in/prateek-ahlawat/"}
-           git={"https://twitter.com/PSinghAhlawat"}
-           />
+         
            <Card name={"Dhruvraj Singh Rathore"} position={"Sponsorship Lead"} 
            desc={"After working with many organisations I have learned discipline,patience and team work that helped me in understanding different people . I also have a habit of not giving up."} class={"col-xs-12 col-sm-6"}
            img={"https://lh3.googleusercontent.com/pw/ACtC-3cU-U5OT99tSUAgURxbKW4ByiAbJH7kCgR5tA6RWLZnOQqPWaMBA3zWtTk9KlYaNm6GWjjh63UOssrNUxHYlnquxQb9bbimAU9Ovg76WJxVakBs4O6jm71mh2DHNnjImkav18ci-UHe0xEGAJUkhaB7=w769-h815-no?authuser=0"}
