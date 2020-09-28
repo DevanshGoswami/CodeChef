@@ -17,19 +17,35 @@ export const NotFound = () => {
     
 <div class="container">
 
-<div className="mx-5 text-center " data-aos="zoom-in" data-aos-duration="2000">
+<div className="mx-5 " data-aos="zoom-in" data-aos-duration="2000">
    <h1 style={{fontSize:"70px",fontWeight:"bold",color:"#713e20"}}>
        Error 404 
    </h1>
 
 <p style={{fontSize:"20px"}}>Page Not Found</p>
-<a href="http://codechefsrm.in/" style={{textDecoration:"none",fontWeight:"600",color:"#713e20"}}>Go Back to Homepage</a>
+
    
 
-</div>
+<section>
+										<header>
+											<h3>Kirsten Beyer</h3>
+										</header>
+										<div class="content">
+
+											<blockquote>No one is truly lost when they remain in the hearts and minds of those who love them</blockquote>
+
+										</div>
+									</section>
+
+                                    <a href="http://codechefsrm.in/" style={{textDecoration:"none",fontWeight:"600",color:"#713e20",marginTop:"50px"}}>Go Back to Homepage</a>
+
 </div>
 
 
+
+</div>
+
+                                 
 
     </div>
        
