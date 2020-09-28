@@ -22,7 +22,7 @@ export const NotFound = () => {
 					<div class="inner medium">
                   
 
-<div className="mx-5 inner" data-aos="zoom-in" data-aos-duration="2000">
+<div className="mx-5 " data-aos="zoom-in" data-aos-duration="2000">
    <h1 style={{fontSize:"70px",fontWeight:"bold",color:"#713e20"}}>
        Error 404 
    </h1>
