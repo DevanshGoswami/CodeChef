@@ -1,21 +1,37 @@
 import React from 'react';
-import {Footer} from './footer';
+import './App.css';
+
+
+import "bootstrap/dist/css/bootstrap.min.css";
+import 'font-awesome/css/font-awesome.css';
+
 import './assets/css/main.css';
 import './assets/css/noscript.css';
 import './assets/css/fontawesome-all.min.css';
-import './App.css';
+
+
 export const NotFound = () => {
     return(
-        <div className="App">
-        <div class="container text-center">
-        <h1 style={{fontWeight:"800",marginTop:"150px",fontSize:"70px",color:"#713e20"}}>Error 404</h1>
-        <p style={{fontSize:"20px"}}>Page Not Found</p>
-        <a href="https://codechefsrm.in/" style={{fontWeight:"600",marginTop:"50px",color:"#713e20",textDecoration:"none"}}>Go Back to HomePage</a>
-        <hr></hr>
+        <div className="App is-preload" style={{marginTop:"200px"}} >
       
-        </div>
-        <Footer/>
-        </div>
+    
+<div class="container">
+
+<div className="mx-5 text-center " data-aos="zoom-in" data-aos-duration="2000">
+   <h1 style={{fontSize:"70px",fontWeight:"bold",color:"#713e20"}}>
+       Error 404 
+   </h1>
+
+<p style={{fontSize:"20px"}}>Page Not Found</p>
+<a href="http://codechefsrm.in/" style={{textDecoration:"none",fontWeight:"600",color:"#713e20"}}>Go Back to Homepage</a>
+   
+
+</div>
+</div>
+
+
+
+    </div>
        
     );
 }
