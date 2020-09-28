@@ -23,12 +23,14 @@ var firebaseConfig = {
     appId: "1:180871991549:web:aaa5a34f3d72a50088ae94",
     measurementId: "G-KE2PFSCKR3"
   };
-  firebase.initializeApp(firebaseConfig);
-
-  var Ref = firebase.database().ref('Submitions');
+  
+  if (!firebase.apps.length) {
+	firebase.initializeApp(firebaseConfig);
+ }
+  var Refer = firebase.database().ref('Messages');
 
   function SaveSubmit(name,email,message){
-      var newSubmit = Ref.push();
+      var newSubmit = Refer.push();
       newSubmit.set({
           name : name,
           email : email,
