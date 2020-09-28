@@ -1,6 +1,7 @@
 import React from 'react';
 import {Switch , Route ,BrowserRouter as Router} from 'react-router-dom';
 import {Loader} from './loader';
+import {NotFound} from './404';
 
 const Home = React.lazy(()=>import('./home'));
 const Events = React.lazy(()=>import('./events'));
@@ -33,6 +34,11 @@ class App extends React.Component{
               <Route path="/events" exact render ={()=>(
             <React.Suspense fallback={<Loader/>}>
               <Events/>
+            </React.Suspense>
+          )}/>
+            <Route path="*" exact render ={()=>(
+            <React.Suspense fallback={<Loader/>}>
+            <NotFound/>
             </React.Suspense>
           )}/>
         </Switch> 

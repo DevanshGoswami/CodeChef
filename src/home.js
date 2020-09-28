@@ -55,7 +55,7 @@ class Home extends React.Component{
    
 	}
 	
-	handleSubmit(values) {
+	handleSubmit(e) {
        
       
         var N = this.state.name;
@@ -67,10 +67,14 @@ class Home extends React.Component{
 
 
         SaveSubmit(N,E,M);
-       
+	   
+	
+		
      this.setState({
 		 show : false
 	 });
+
+	 e.preventDefault();
 
 	}
 	
@@ -175,7 +179,7 @@ class Home extends React.Component{
 				<section class="wrapper style1 align-center" data-aos="fade-left" data-aos-duration="2000">
 					<div class="inner medium">
 						<h2 style={{color:"#713e20",fontWeight:"800"}}>Get in touch</h2>
-						<form onSubmit={() => this.handleSubmit()}>
+						<form onSubmit={this.handleSubmit}>
 							<div class="fields">
 								<div class="field half">
 									<label for="name" className="sept" style={{fontWeight:"bold"}}>Name</label>

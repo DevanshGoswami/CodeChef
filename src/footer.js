@@ -19,7 +19,7 @@ export const Footer = () => {
 						</ul>
                         
 						<p><span className="sept">&copy;</span> CodeChef SRM: All Rights Reserved.</p>
-						<p style={{fontSize:"13px"}}>SRM Institute of Science and Technology,<br></br> SRM Nagar, Kattankulathur, Chengalpattu District,<br></br> Tamil Nadu - 603203.</p>
+						<p style={{fontSize:"13px"}}><i class="fa fa-map-marker sept-link" aria-hidden="true"> </i> SRM Institute of Science and Technology,<br></br> SRM Nagar, Kattankulathur, Chengalpattu District,<br></br> Tamil Nadu - 603203.</p>
                         <span style={{fontSize:"14px"}}>
                         <i class="fa fa-phone sept-link" aria-hidden="true"></i> Contact us: <br></br><a href="tel:+91 87916 15165" style={{textDecoration:"none"}}>+91 87916 15165</a> <br></br><a href="tel:+91 95715 66754" style={{textDecoration:"none"}}>+91 95715 66754</a>
                         </span>
