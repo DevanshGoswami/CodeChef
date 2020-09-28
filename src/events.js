@@ -5,8 +5,10 @@ import './assets/css/main.css';
 import './assets/css/noscript.css';
 import './assets/css/fontawesome-all.min.css';
 import {Helmet} from 'react-helmet';
+import {Navbar} from './nav';
+import {Footer} from './footer';
 
-import {Link,withRouter} from 'react-router-dom';
+import {withRouter} from 'react-router-dom';
 
 
 
@@ -83,27 +85,7 @@ class Events extends React.Component{
              /> 
              <title>Events</title>
                 </Helmet>
-                <div class="menu-wrap">
-					<input type="checkbox" class="toggler"></input>
-					<div class="hamburger"><div></div></div>
-					<div class="menu">
-					<div>
-						<div>
-						<ul style={{marginBottom:"30px"}}>
-							<li><Link to="/" >Home</Link></li>
-							<li><Link to="/team" >Team</Link></li>
-							<li><Link to="/events" style={{color:"#713e20"}} className="active-link">Events</Link></li>
-						</ul>
-						<ul class="icons" style={{marginLeft:"15px"}}>
-						<li><a href="https://twitter.com/CodeChefSRM" class="icon brands style2 fa-twitter sept-link" target = "_blank" rel = "noopener noreferrer"><span class="label">Twitter</span></a></li>
-							<li><a href="https://www.facebook.com/CodeChefSRM/" class="icon brands style2 fa-facebook-f sept-link" target = "_blank" rel = "noopener noreferrer"><span class="label">Facebook</span></a></li>
-							<li><a href="https://www.instagram.com/codechefsrm/" class="icon brands style2 fa-instagram sept-link" target = "_blank" rel = "noopener noreferrer"><span class="label">Instagram</span></a></li>
-							<li><a href="https://in.linkedin.com/company/ccscsrm" class="icon brands style2 fa-linkedin-in sept-link" target = "_blank" rel = "noopener noreferrer"><span class="label">LinkedIn</span></a></li>
-						</ul>
-						</div>
-					</div>
-					</div>
-				</div>
+                <Navbar  events={"active-link"} style3={{color:"#713e20"}}/>
           
     <div class="container">
         <h5 class="section-title h1 sept text-center" style={{fontWeight:"800",marginTop:"50px",marginBottom:"60px"}}>Events</h5>
@@ -154,19 +136,7 @@ class Events extends React.Component{
 									</section>
 </div>
 <hr></hr>
-<footer class="wrapper style1 align-center">
-					<div class="inner">
-						<ul class="icons">
-							<li><a href="https://twitter.com/CodeChefSRM" class="icon brands style2 fa-twitter sept-link" target = "_blank" rel = "noopener noreferrer"><span class="label">Twitter</span></a></li>
-							<li><a href="https://www.facebook.com/CodeChefSRM/" class="icon brands style2 fa-facebook-f sept-link" target = "_blank" rel = "noopener noreferrer"><span class="label">Facebook</span></a></li>
-							<li><a href="https://www.instagram.com/codechefsrm/" class="icon brands style2 fa-instagram sept-link" target = "_blank" rel = "noopener noreferrer"><span class="label">Instagram</span></a></li>
-							<li><a href="https://in.linkedin.com/company/ccscsrm" class="icon brands style2 fa-linkedin-in sept-link" target = "_blank" rel = "noopener noreferrer"><span class="label">LinkedIn</span></a></li>
-							<li><a href="mailto:codechefsrm@gmail.com" class="icon style2 fa-envelope sept-link"><span class="label" target = "_blank" rel = "noopener noreferrer">Email</span></a></li>
-						</ul>
-						<p><span className="sept">&copy;</span> CodeChef SRM: All Rights Reserved.</p>
-						<p style={{fontSize:"13px"}}>SRM Institute of Science and Technology,<br></br> SRM Nagar, Kattankulathur, Chengalpattu District,<br></br> Tamil Nadu - 603203.</p>
-					</div>
-				</footer>
+<Footer/>
 
            
             </div>

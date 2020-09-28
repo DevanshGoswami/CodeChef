@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 
-import {Link,withRouter} from "react-router-dom";
+import {withRouter} from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import 'font-awesome/css/font-awesome.css';
 import {Card} from "./card";
@@ -9,7 +9,8 @@ import './assets/css/main.css';
 import './assets/css/noscript.css';
 import './assets/css/fontawesome-all.min.css';
 import {Helmet} from 'react-helmet';
-
+import {Navbar} from './nav';
+import {Footer} from './footer';
 
 class Team extends React.Component{
    
@@ -28,27 +29,7 @@ class Team extends React.Component{
                          /> 
              <title>Team</title>
                 </Helmet>
-                <div class="menu-wrap">
-					<input type="checkbox" class="toggler"></input>
-					<div class="hamburger"><div></div></div>
-					<div class="menu">
-					<div>
-						<div>
-						<ul style={{marginBottom:"30px"}}>
-							<li><Link to="/" >Home</Link></li>
-							<li><Link to="/team" style={{color:"#713e20"}} className="active-link">Team</Link></li>
-							<li><Link to="/events">Events</Link></li>
-						</ul>
-						<ul class="icons" style={{marginLeft:"15px"}}>
-                        <li><a href="https://twitter.com/CodeChefSRM" class="icon brands style2 fa-twitter sept-link" target = "_blank" rel = "noopener noreferrer"><span class="label">Twitter</span></a></li>
-                        <li><a href="https://www.facebook.com/CodeChefSRM/" class="icon brands style2 fa-facebook-f sept-link" target = "_blank" rel = "noopener noreferrer"><span class="label">Facebook</span></a></li>
-							<li><a href="https://www.instagram.com/codechefsrm/" class="icon brands style2 fa-instagram sept-link" target = "_blank" rel = "noopener noreferrer"><span class="label">Instagram</span></a></li>
-							<li><a href="https://in.linkedin.com/company/ccscsrm" class="icon brands style2 fa-linkedin-in sept-link" target = "_blank" rel = "noopener noreferrer"><span class="label">LinkedIn</span></a></li>
-						</ul>
-						</div>
-					</div>
-					</div>
-				</div>
+                <Navbar team={"active-link"}  style2={{color:"#713e20"}}/>
             <section id="team" class="pb-5" style={{background:"none",marginTop:"27px"}}>
     <div class="container">
         <h5 class="section-title h1" style={{fontWeight:"800",marginTop:"50px"}}>Board</h5>
@@ -139,19 +120,7 @@ class Team extends React.Component{
     </div>
 </section>
 <hr></hr>
-<footer class="wrapper style1 align-center">
-					<div class="inner">
-						<ul class="icons">
-							<li><a href="https://twitter.com/CodeChefSRM" class="icon brands style2 fa-twitter sept-link" target = "_blank" rel = "noopener noreferrer"><span class="label">Twitter</span></a></li>
-							<li><a href="https://www.facebook.com/CodeChefSRM/" class="icon brands style2 fa-facebook-f sept-link" target = "_blank" rel = "noopener noreferrer"><span class="label">Facebook</span></a></li>
-							<li><a href="https://www.instagram.com/codechefsrm/" class="icon brands style2 fa-instagram sept-link" target = "_blank" rel = "noopener noreferrer"><span class="label">Instagram</span></a></li>
-							<li><a href="https://in.linkedin.com/company/ccscsrm" class="icon brands style2 fa-linkedin-in sept-link" target = "_blank" rel = "noopener noreferrer"><span class="label">LinkedIn</span></a></li>
-							<li><a href="mailto:codechefsrm@gmail.com" class="icon style2 fa-envelope sept-link"><span class="label" target = "_blank" rel = "noopener noreferrer">Email</span></a></li>
-						</ul>
-						<p><span className="sept">&copy;</span> CodeChef SRM: All Rights Reserved.</p>
-						<p style={{fontSize:"13px"}}>SRM Institute of Science and Technology,<br></br> SRM Nagar, Kattankulathur, Chengalpattu District,<br></br> Tamil Nadu - 603203.</p>
-					</div>
-				</footer>
+   <Footer/>
 
             </div>
         );
