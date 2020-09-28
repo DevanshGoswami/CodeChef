@@ -12,12 +12,17 @@ import './assets/css/fontawesome-all.min.css';
 
 export const NotFound = () => {
     return(
-        <div className="App is-preload" style={{marginTop:"200px"}} >
+        <div className="App"  >
       
-    
-<div class="container">
+      <div className="is-preload" style={{fontFamily:"Raleway,sans-serif",background:"none"}}>
+        
+		<div id="wrapper" class="divided">
 
-<div className="mx-5 " data-aos="zoom-in" data-aos-duration="2000">
+				<section class="wrapper style1 " data-aos="fade-left" data-aos-duration="2000">
+					<div class="inner medium">
+                  
+
+<div className="mx-5 inner" data-aos="zoom-in" data-aos-duration="2000">
    <h1 style={{fontSize:"70px",fontWeight:"bold",color:"#713e20"}}>
        Error 404 
    </h1>
@@ -40,10 +45,10 @@ export const NotFound = () => {
                                     <a href="http://codechefsrm.in/" style={{textDecoration:"none",fontWeight:"600",color:"#713e20",marginTop:"50px"}}>Go Back to Homepage</a>
 
 </div>
-
-
-
-</div>
+                        </div>
+                        </section>
+                        </div>
+                        </div>
 
                                  
 
