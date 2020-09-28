@@ -3,7 +3,7 @@ import React from 'react';
 import './assets/css/main.css';
 import './assets/css/noscript.css';
 import './assets/css/fontawesome-all.min.css';
-import banner from './images/banner.png';
+import banner from './images/banner2.jpg';
 import {Helmet} from 'react-helmet';
 import firebase from 'firebase';
 import {Navbar} from './nav';
