@@ -204,6 +204,18 @@ class Home extends React.Component{
 					</div>
 				</section>
 
+				<section class="wrapper style1 align-center" data-aos="fade-right" data-aos-duration="2000">
+					<div class="inner">
+					<h2 style={{color:"#713e20",fontWeight:"800"}}>Find Us</h2>
+						<p><i class="fa fa-map-marker sept-link" aria-hidden="true"> </i> SRM Institute of Science and Technology,<br></br> SRM Nagar, Kattankulathur, Chengalpattu District,<br></br> Tamil Nadu - 603203.</p>
+						
+					</div>
+					<div  style={{background:"none",marginBottom:"50px"}}>
+					<iframe title="Map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3890.3122618504317!2d80.04205281475681!3d12.823087221589363!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a52f712b82a78d9%3A0xfdb944a3aee53831!2sSRM%20Institute%20of%20Science%20and%20Technology!5e0!3m2!1sen!2sin!4v1601405094039!5m2!1sen!2sin" width="400" height="300" frameborder="0" style={{border:"0"}} allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+					</div>
+				</section>
+
+
 				<Footer/>
 
 		</div>
