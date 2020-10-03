@@ -62,7 +62,8 @@ class Events extends React.Component{
 											<p><span class="image left"><img src={event.img} alt=""></img></span>{event.des}</p>
                                             <ul class="actions special">
 								              {/* <li><button id="submit"><Link to="/registration" style={{textDecoration:"none"}}>Register</Link></button></li> */}
-                                              <p className="sept"><strong>Registrations Closed!</strong></p>
+                                              {/* <p className="sept"><strong>Registrations Closed!</strong></p> */}
+                                              <li><a className="button primary" href="https://meet.google.com/bpj-sdmu-bac">Join Meet</a></li>
 							                </ul>
 										</div>
 				</section>
