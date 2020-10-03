@@ -8,7 +8,7 @@ import {Helmet} from 'react-helmet';
 import {Navbar} from './nav';
 import {Footer} from './footer';
 
-import {Link,withRouter} from 'react-router-dom';
+import {withRouter} from 'react-router-dom';
 
 
 
@@ -61,7 +61,8 @@ class Events extends React.Component{
                                             
 											<p><span class="image left"><img src={event.img} alt=""></img></span>{event.des}</p>
                                             <ul class="actions special">
-								              <li><button id="submit"><Link to="/registration" style={{textDecoration:"none"}}>Register</Link></button></li>
+								              {/* <li><button id="submit"><Link to="/registration" style={{textDecoration:"none"}}>Register</Link></button></li> */}
+                                              <p className="sept"><strong>Registrations Closed!</strong></p>
 							                </ul>
 										</div>
 				</section>
