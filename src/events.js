@@ -54,16 +54,16 @@ class Events extends React.Component{
 										
 										<div class="content box" data-aos="fade-down-left">
 
-										<h2 className="text-center px-5 py-3" style={{background:"#713e20",color:"white"}}>Upcoming Event</h2>
+										<h2 className="text-center px-5 py-3" style={{background:"#713e20",color:"white"}}>Chef's Fiesta is Here!!</h2>
                                         <hr></hr>
 											<h4 className="sept" style={{fontWeight:"bold"}}>{event.title}</h4>
                                             <p className="muted"><span class="fa fa-calendar sept" aria-hidden="true"></span> {event.date}</p>
                                             
 											<p><span class="image left"><img src={event.img} alt=""></img></span>{event.des}</p>
                                             <ul class="actions special">
-								              {/* <li><button id="submit"><Link to="/registration" style={{textDecoration:"none"}}>Register</Link></button></li> */}
+								              <li><button id="submit"><a href={event.link} style={{textDecoration:"none"}}>Register</a></button></li>
                                               {/* <p className="sept"><strong>Registrations Closed!</strong></p> */}
-                                              <li><a className="button primary" href="https://meet.google.com/bpj-sdmu-bac">Join Meet</a></li>
+                                           
 							                </ul>
 										</div>
 				</section>
