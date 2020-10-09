@@ -91,7 +91,7 @@ class Events extends React.Component{
                 <Navbar  events={"active-link"} style3={{color:"#713e20"}}/>
           
     <div class="container">
-        <h5 class="section-title h1 sept text-center" style={{fontWeight:"800",marginTop:"50px",marginBottom:"60px"}}>Events</h5>
+        <h5 class="section-title h1 sept text-center" style={{fontWeight:"800",marginTop:"100px",marginBottom:"60px"}}>Events</h5>
         
         {Res.slice(0,1).map(renderEvent)}
         </div>

@@ -33,7 +33,7 @@ class Team extends React.Component{
             <section id="team" class="pb-5" style={{background:"none",marginTop:"27px"}}>
                 
     <div class="container">
-        <h5 class="section-title h1" style={{fontWeight:"800",marginTop:"50px"}}>Faculty Adviser</h5>
+        <h5 class="section-title h1" style={{fontWeight:"800",marginTop:"100px"}}>Faculty Adviser</h5>
         <div class="row justify-content-sm-center" data-aos="zoom-out" data-aos-duration="2000">
         <div class="col-xs-12 col-sm-6 sm-offset-3">
                 <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
