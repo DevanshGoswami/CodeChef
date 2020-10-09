@@ -33,7 +33,7 @@ class Team extends React.Component{
             <section id="team" class="pb-5" style={{background:"none",marginTop:"27px"}}>
                 
     <div class="container">
-        <h5 class="section-title h1" style={{fontWeight:"800",marginTop:"100px"}}>Faculty Adviser</h5>
+        <h5 class="section-title h1" style={{fontWeight:"800",marginTop:"100px"}}>Faculty Advisor</h5>
         <div class="row justify-content-sm-center" data-aos="zoom-out" data-aos-duration="2000">
         <div class="col-xs-12 col-sm-6 sm-offset-3">
                 <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
@@ -51,7 +51,7 @@ class Team extends React.Component{
                             <div class="card">
                                 <div class="card-body text-center mt-4">
                                     <h4 class="card-title" style={{fontWeight:"bold"}}>S. Nithiya</h4>
-                                    <p class="card-text">As a teacher, her eagerness and passion to intoduce the students to the programming world has fueled our drive to do our best.
+                                    <p class="card-text">As a teacher, her eagerness and passion to introduce the students to the programming world has fueled our drive to do our best.
                                       Having immense experience she knows how to manage and guide the club in the best way.</p>
                                     <ul class="list-inline">
                                         <li class="list-inline-item">

@@ -2,6 +2,7 @@ import React from 'react';
 
 export const Card =(props) => {
     return(
+
 <div class={props.class}>
                 <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
                     <div class="mainflip">
@@ -35,6 +36,7 @@ export const Card =(props) => {
                     </div>
                 </div>
             </div>
+
     );
 }
 
