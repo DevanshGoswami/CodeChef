@@ -31,9 +31,46 @@ class Team extends React.Component{
                 </Helmet>
                 <Navbar team={"active-link"}  style2={{color:"#713e20"}}/>
             <section id="team" class="pb-5" style={{background:"none",marginTop:"27px"}}>
+                
     <div class="container">
-        <h5 class="section-title h1" style={{fontWeight:"800",marginTop:"50px"}}>Board</h5>
-        <div class="row" data-aos="zoom-in" data-aos-duration="2000">
+        <h5 class="section-title h1" style={{fontWeight:"800",marginTop:"50px"}}>Faculty Adviser</h5>
+        <div class="row justify-content-sm-center" data-aos="zoom-out" data-aos-duration="2000">
+        <div class="col-xs-12 col-sm-6 sm-offset-3">
+                <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                    <div class="mainflip">
+                        <div class="frontside">
+                            <div class="card">
+                                <div class="card-body text-center">
+                                    <p><img class=" img-fluid" src="https://lh3.googleusercontent.com/pw/ACtC-3eIF6b1G7buG1qC532TyLgae4BeG_f37ZH4yuIhMhGgWZEZcIqIvFWfe1uSFvY1oFqoS2CQLUTslONy903MEAsoiT1CkWHXzfzych-wG7L139wQyRUDO_vqldfNgukNHaP01d1wpJdQpek7DdlmfUfi=w580-h560-no?authuser=0" alt=""></img></p>
+                                    <h4 class="card-title" style={{fontWeight:"bold"}}>S. Nithiya</h4>
+                                    <p class="card-text">Assistant Professor, IT</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="backside">
+                            <div class="card">
+                                <div class="card-body text-center mt-4">
+                                    <h4 class="card-title" style={{fontWeight:"bold"}}>S. Nithiya</h4>
+                                    <p class="card-text">As a teacher, her eagerness and passion to intoduce the students to the programming world has fueled our drive to do our best.
+                                      Having immense experience she knows how to manage and guide the club in the best way.</p>
+                                    <ul class="list-inline">
+                                        <li class="list-inline-item">
+                                            <a class="icon style2 fa-envelope sept-link" target = "_blank" rel = "noopener noreferrer" href="mailto:nithiya.s@ktr.srmuniv.ac.in">
+                                            </a>
+                                        </li>
+                                        
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr></hr>
+        <h5 class="section-title h1" style={{fontWeight:"800",marginTop:"50px"}}>Board 20-21</h5>
+        <div data-aos="zoom-in" data-aos-duration="2000">
+        <div class="row">
             
            <Card name={"Devansh Goswami"} position={"President"} 
            desc={"Devansh Goswami has great experience in leadership. He likes to design beautiful websites and works on data analysis."} class={"col-xs-12 col-sm-6"} 
@@ -59,12 +96,17 @@ class Team extends React.Component{
            link={"https://www.linkedin.com/in/thekhananas/"}
            git={"https://github.com/chilloutwithanas"}
            />
+           </div>
+         
+           <div className="row justify-content-sm-center">
            <Card name={"Hritik Bhandari"} position={"Projects and Research Director"} 
            desc={"Hritik is a tech evangelist with a profound interest in Data Science and full stack development."} class={"col-xs-12 col-sm-6"}
            img={"https://lh3.googleusercontent.com/pw/ACtC-3dYXRpD1-4N_R2G6zMDEj_lrjxXPaddRGaxCYCGcfP2TseaB27Yp4vo2v4bD-Hw-h5SZnQiOPq6Jpsb9pgYANFWO6XKeOU5cL_5Xn9Bj1z-rzmxoYuwYakJ78G1cexVpAiNcf5VwnCmqzTpqKPNbqvb=s954-no?authuser=0"}
            link={"https://www.linkedin.com/in/hritikbhandari"}
            git={"https://github.com/hritikbhandari"}
            />
+           </div>
+           <div className="row">
            <Card name={"Takshil Mittal"} position={"Corporate Director"} 
            desc={"When it comes to organising events I had an experience of organising some big events and believs in team work rather than individual work and I love facing challenges."} class={"col-xs-12 col-sm-6"}
            img={"https://lh3.googleusercontent.com/pw/ACtC-3eVvL7WFRnsLXsbWhKWIxjknuEcJ8HmeDBjQsFuOJwdPlyrL89M0y2oSx0kHP2RVsPaSy8JvhxoID-1El0yRwlHX8OUq2zFAFEVu5n20KT_AdTknxNvF95n7ev1HMaq8MrDeNPFjKUNLNPOtgCSNKp2=w768-h774-no?authuser=0"}
@@ -77,30 +119,32 @@ class Team extends React.Component{
            link={"https://www.linkedin.com/in/sachin-agrawal-11418719a"}
            git={"https://github.com/sachinihcas"}
            />
+           </div>
+           <div className="row justify-content-sm-center">
            <Card name={"Aditi Patel"} position={"Creatives Director"} 
            desc={"Aditi is vibrant, persistent, and a hardworking girl who knows how to handle difficult situations very well. She is passionate about designing."} class={"col-xs-12 col-sm-6"}
            img={"https://lh3.googleusercontent.com/pw/ACtC-3cMn10A1V2gr7sJhDX3YPo0t4ErvPoJNR_sg8E173d331GxDVZgVXYFZTOPQUMpyO6pKT6GR9cMuOl4gFPqwajTlH1qNUja_fystfSvLoFcNh0zgVjJjr9YPw8wbVOZ-fT6x0zvzescqclbjGA8sOUj=w1024-h954-no?authuser=0"}
            link={"https://www.linkedin.com/in/aditi-patel-49876718b"}
            git={"https://github.com/Aditipatel02"}
            />
+           </div>
+           <div className="row justify-content-sm-center">
            <Card name={"Rohan Singh Rajput"} position={"Public Relations Officer"} 
            desc={"Rohan is someone you can depend on when it really matters, he's quick with his work and responses."} class={"col-xs-12 col-sm-6"}
            img={"https://lh3.googleusercontent.com/pw/ACtC-3cEPgvzF8Bf1E65-NqIhCWpAzRrJgEwtq7f11DWdwdnU7XufRy7wMkyIbEGJEi_Hhj_QcNvxowMKlcwO3K8EyZBzn-b3v3_PZq_cA7vWOq8WQVHfz8f0XGY1zuci_jP6kjqOqVVEgdEUmfJ6kw6sDhJ=w947-h954-no?authuser=0"}
            link={"https://www.linkedin.com/in/rohan-singh-rajput-1b504b199"}
            git={"https://www.github.com/Denx00"}
            />
+           </div>
+           <div className="row justify-content-sm-center">
            <Card name={"Yash Narang"} position={"Web Master"} 
            desc={"With industry experience in web development, Yash is an enthusiastic techie who wants to expand his work into cross platform development."} class={"col-xs-12 col-sm-6"}
            img={"https://lh3.googleusercontent.com/pw/ACtC-3fZ-XIa4NVvNaxbSF3ulhlk8GlwcwhQ_-q4qe1yRK6-JIImN0Jm69soDosDag0L7uDKuBcj4rurTpw35m1wUCWTD3hs_pq82X0WbQGVUc--Z6ELp-q-KGgTvMHOP2mnf_ukXYYG5O5ioe7BcNQbbJes=s200-no?authuser=0"}
            link={"https://www.linkedin.com/in/ysnarang/"}
            git={"https://github.com/yashu2001"}
            />
-           <Card name={"Lavisha Gera"} position={"Web Master"} 
-           desc={"Lavisha is a result-oriented Computer Science major who aims to leverage her proven knowledge of computer aided engineering skills."} class={"col-xs-12 col-sm-6"}
-           img={"https://lh3.googleusercontent.com/pw/ACtC-3cIR64PinxYF9q-3T4VGMfJdjv14iFbJlMXR-zj03rakVl9CRMiBoIHkWjJoRekBNfa8oW_tpZRPaC2MZDsdLkqL-R00CW-g6M2QyPjtccCq-3I22ZL79lbmyjOdv1bj-bPAcyAeyvYTauHtpVq6b2p=w300-h297-no?authuser=0"}
-           link={"https://in.linkedin.com/in/lavisha-gera-0408"}
-           git={"https://github.com/LavishaG48"}
-           />
+           </div>
+           <div className="row justify-content-sm-center">
          
            <Card name={"Dhruvraj Singh Rathore"} position={"Sponsorship Lead"} 
            desc={"After working with many organisations I have learned discipline,patience and team work that helped me in understanding different people . I also have a habit of not giving up."} class={"col-xs-12 col-sm-6"}
@@ -108,9 +152,8 @@ class Team extends React.Component{
            link={"https://www.linkedin.com/in/dhruvraj-singh-rathore-0a1171173/"}
            git={"https://github.com/dhruvrajsinghrathore"}
            />
-
            
-
+</div>
         </div>
     </div>
 </section>
