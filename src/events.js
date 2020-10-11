@@ -54,7 +54,7 @@ class Events extends React.Component{
 										
 										<div class="content box" data-aos="fade-down-left">
 
-										<h2 className="text-center px-5 py-3" style={{background:"#713e20",color:"white"}}>Chef's Fiesta is Here!!</h2>
+										<h2 className="text-center px-5 py-3" style={{background:"#713e20",color:"white"}}>Upcoming Event</h2>
                                         <hr></hr>
 											<h4 className="sept" style={{fontWeight:"bold"}}>{event.title}</h4>
                                             <p className="muted"><span class="fa fa-calendar sept" aria-hidden="true"></span> {event.date}</p>
