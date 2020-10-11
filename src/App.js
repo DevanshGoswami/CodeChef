@@ -1,6 +1,6 @@
 import React, {useEffect} from 'react';
 import {Switch , Route ,BrowserRouter as Router,useLocation} from 'react-router-dom';
-import {Loader} from './loader';
+// import {Loader} from './loader';
 import {NotFound} from './404';
 // import Reg from './eventreg';
 
@@ -33,21 +33,19 @@ class App extends React.Component{
    
         <Switch location = {this.props.location}>
           <Route path="/" exact render ={()=>(
-            <React.Suspense fallback={<Loader/>}>
+            <React.Suspense fallback={<Load/>}>
               <Home/>
             </React.Suspense>
           )}/>
-           <Route path="/lo" exact render ={()=>(
-              <Load/>
-          )}/>
-          <Route path="/load" component={Loader}/>
+      
+         
               <Route path="/team" exact render ={()=>(
-            <React.Suspense fallback={<Loader/>}>
+            <React.Suspense fallback={<Load/>}>
               <Team/>
             </React.Suspense>
           )}/>
               <Route path="/events" exact render ={()=>(
-            <React.Suspense fallback={<Loader/>}>
+            <React.Suspense fallback={<Load/>}>
               <Events/>
             </React.Suspense>
           )}/>
@@ -59,7 +57,7 @@ class App extends React.Component{
             </React.Suspense>
           )}/> */}
           <Route path="*" exact render ={()=>(
-            <React.Suspense fallback={<Loader/>}>
+            <React.Suspense fallback={<Load/>}>
             <NotFound/>
             </React.Suspense>
           )}/>
