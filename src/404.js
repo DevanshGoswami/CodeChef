@@ -8,51 +8,59 @@ import 'font-awesome/css/font-awesome.css';
 import './assets/css/main.css';
 import './assets/css/noscript.css';
 import './assets/css/fontawesome-all.min.css';
+import {Link} from 'react-router-dom';
+import {Helmet} from 'react-helmet';
 
 
 export const NotFound = () => {
     return(
-        <div className="App"  >
-      
-      <div className="is-preload" style={{fontFamily:"Raleway,sans-serif",background:"none"}}>
+        <>
+        <Helmet>
+        <meta charset="utf-8" />
         
-		<div id="wrapper" class="divided">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="theme-color" content="#000000" />
+<meta
+name="Error"
+content="Page Not Found"
+/> 
+<title>Error 404</title>
+</Helmet>
+<div id="wrapper" className="divided">
 
-				<section class="wrapper style1 " data-aos="fade-left" data-aos-duration="2000">
-					<div class="inner medium">
-                  
 
-<div className="mx-5 " data-aos="zoom-in" data-aos-duration="2000">
-   <h1 style={{fontSize:"70px",fontWeight:"bold",color:"#713e20"}}>
-       Error 404 
-   </h1>
+<section className="banner style1 orient-left content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right" >
+<div className="content">
+<h2 style={{fontWeight:"800",fontSize:"40px"}}><span style={{color:'#713e20'}}>Error </span>404</h2>
 
-<p style={{fontSize:"20px"}}>Page Not Found</p>
-
-   
-
-<section>
 										<header>
 											<h3>Kirsten Beyer</h3>
 										</header>
-										<div class="content">
+										
 
 											<blockquote>No one is truly lost when they remain in the hearts and minds of those who love them</blockquote>
 
-										</div>
-									</section>
+									
+									
 
-                                    <a href="http://codechefsrm.in/" style={{textDecoration:"none",fontWeight:"600",color:"#713e20",marginTop:"50px"}}>Go Back to Homepage</a>
+<p className="major" style={{fontSize:"20px",fontWeight:"700"}}>Page <span style={{color:"#713e20"}}>Not</span> Found.</p>
+<ul className="actions stacked">
+                <li><Link to="/"  className="button big wide smooth-scroll-middle">HOME</Link></li>
+            </ul>
+</div>
+</section>
+
+
+
+
+
+
 
 </div>
-                        </div>
-                        </section>
-                        </div>
-                        </div>
 
-                                 
+</>
 
-    </div>
-       
     );
 }
+
+
