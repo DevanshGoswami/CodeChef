@@ -54,17 +54,21 @@ class Events extends React.Component{
 										
 										<div class="content box" data-aos="fade-down-left">
 
-										<h2 className="text-center px-5 py-3" style={{background:"#713e20",color:"white"}}>Upcoming Event</h2>
-                                        <hr></hr>
-											<h4 className="sept" style={{fontWeight:"bold"}}>{event.title}</h4>
-                                            <p className="muted"><span class="fa fa-calendar sept" aria-hidden="true"></span> {event.date}</p>
-                                            
-											<p><span class="image left"><img src={event.img} alt=""></img></span>{event.des}</p>
-                                            <ul class="actions special">
-								              <li><button id="submit"><a href={event.link} style={{textDecoration:"none"}}>Register</a></button></li>
-                                              {/* <p className="sept"><strong>Registrations Closed!</strong></p> */}
-                                           
-							                </ul>
+									
+                                            <section className="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in" id="first">
+                                                <div className="content">
+                                                    <h2 style={{fontWeight:"800",fontSize:"30px"}}><span style={{color:"#713e20"}}>{event.title}</span></h2>
+                                                    <p className="muted"><span class="fa fa-calendar sept" aria-hidden="true"></span> {event.date}</p>
+                                                    <p style={{fontWeight:"400"}}>{event.des}</p>
+                                                    {/* Presenting before you, our flagship event, Chef's Fiesta, a festival of technical and non-technical events filled with fierce competition sprinkled with a special topping by CodeChef SRM. */}
+                                                    <ul className="actions stacked">
+                                                    <li><a href={event.link} className="button primary1 theme1">Register</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div className="image">
+                                                    <img src={event.img} alt="" />
+                                                </div>
+                                            </section>
 										</div>
 				</section>
                 </div>
