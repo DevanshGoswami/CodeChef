@@ -369,4 +369,31 @@ Loader
   padding: 10px;
 }
 
+#img2{
+  animation: wheel 2s infinite linear;
+  transform-origin: center;
+  transform-box: fill-box;
+}
 
+@keyframes wheel {
+  from{
+    transform: rotateZ(0deg);
+  }
+
+  to{
+    transform: rotateZ(360deg);
+  }
+}
+
+#img1
+    {
+      position: relative;
+      top: 0;
+      left: 0;
+    }
+#img2
+    {
+      position: absolute;
+      top: 60px;
+      left: 80px;
+    }
