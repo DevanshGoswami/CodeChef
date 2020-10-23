@@ -62,7 +62,7 @@ class Events extends React.Component{
                                                     <p style={{fontWeight:"400"}}>{event.des}</p>
                                                     {/* Presenting before you, our flagship event, Chef's Fiesta, a festival of technical and non-technical events filled with fierce competition sprinkled with a special topping by CodeChef SRM. */}
                                                     <ul className="actions stacked">
-                                                    <li><a href={event.link} className="button primary1 theme1">Register</a></li>
+                                                    <li><a href={event.link} className="button primary1 theme1">Join</a></li>
                                                     </ul>
                                                 </div>
                                                 <div className="image">
