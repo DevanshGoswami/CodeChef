@@ -207,12 +207,11 @@ class Home extends React.Component{
 					</div>
 				</section>
 
-				<section className="wrapper style1 align-center">
-						<div className="inner">
+			
+						
 						<Sponsor/>
-						</div>
-
-				</section>
+						
+				
 
 				<section class="wrapper style1 align-center" data-aos="fade-right" data-aos-duration="2000">
 					<div class="inner">
