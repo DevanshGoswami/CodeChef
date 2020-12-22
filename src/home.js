@@ -12,7 +12,7 @@ import {Navbar} from './nav';
 
 import {withRouter} from 'react-router-dom';
 import {Footer} from './footer';
-import {Sponsor} from './partner';
+
 
 var firebaseConfig = {
     apiKey: "AIzaSyDQmu4x_FdIxQ7GJFX9S20j3Jrjhr4tLn0",
@@ -209,7 +209,7 @@ class Home extends React.Component{
 
 			
 						
-						<Sponsor/>
+					
 						
 				
 

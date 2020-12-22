@@ -45,36 +45,36 @@ class Events extends React.Component{
             );
         } 
 
-         var renderEvent = (event) => {
-             return(
+        //  var renderEvent = (event) => {
+        //      return(
 
-                <div>
+        //         <div>
                 
-                <section data-aos="flip-down">
+        //         <section data-aos="flip-down">
 										
-										<div class="content box" data-aos="fade-down-left">
+		// 								<div class="content box" data-aos="fade-down-left">
 
 									
-                                            <section className="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in" id="first">
-                                                <div className="content">
-                                                    <h2 style={{fontWeight:"800",fontSize:"30px"}}><span style={{color:"#713e20"}}>{event.title}</span></h2>
-                                                    <p className="muted"><span class="fa fa-calendar sept" aria-hidden="true"></span> {event.date}</p>
-                                                    <p style={{fontWeight:"400"}}>{event.des}</p>
-                                                    {/* Presenting before you, our flagship event, Chef's Fiesta, a festival of technical and non-technical events filled with fierce competition sprinkled with a special topping by CodeChef SRM. */}
-                                                    <ul className="actions stacked">
-                                                    <li><a href={event.link} className="button primary1 theme1">Register</a></li>
-                                                    </ul>
-                                                </div>
-                                                <div className="image">
-                                                    <img src={event.img} alt="" />
-                                                </div>
-                                            </section>
-										</div>
-				</section>
-                </div>
+        //                                     <section className="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in" id="first">
+        //                                         <div className="content">
+        //                                             <h2 style={{fontWeight:"800",fontSize:"30px"}}><span style={{color:"#713e20"}}>{event.title}</span></h2>
+        //                                             <p className="muted"><span class="fa fa-calendar sept" aria-hidden="true"></span> {event.date}</p>
+        //                                             <p style={{fontWeight:"400"}}>{event.des}</p>
+        //                                             {/* Presenting before you, our flagship event, Chef's Fiesta, a festival of technical and non-technical events filled with fierce competition sprinkled with a special topping by CodeChef SRM. */}
+        //                                             <ul className="actions stacked">
+        //                                             <li><a href={event.link} className="button primary1 theme1">Register</a></li>
+        //                                             </ul>
+        //                                         </div>
+        //                                         <div className="image">
+        //                                             <img src={event.img} alt="" />
+        //                                         </div>
+        //                                     </section>
+		// 								</div>
+		// 		</section>
+        //         </div>
                 
-             );
-         }
+        //      );
+        //  }
 
         var Res = this.state.result.reverse();
         
@@ -97,7 +97,7 @@ class Events extends React.Component{
     <div class="container">
         <h5 class="section-title h1 sept text-center" style={{fontWeight:"800",marginTop:"100px",marginBottom:"60px"}}>Events</h5>
         
-        {Res.slice(0,1).map(renderEvent)}
+        {/* {Res.slice(0,1).map(renderEvent)} */}
         </div>
         
 <hr></hr>
