@@ -15,14 +15,7 @@ import {Footer} from './footer';
 
 
 var firebaseConfig = {
-    apiKey: "AIzaSyDQmu4x_FdIxQ7GJFX9S20j3Jrjhr4tLn0",
-    authDomain: "contact-us-57b11.firebaseapp.com",
-    databaseURL: "https://contact-us-57b11.firebaseio.com",
-    projectId: "contact-us-57b11",
-    storageBucket: "contact-us-57b11.appspot.com",
-    messagingSenderId: "180871991549",
-    appId: "1:180871991549:web:aaa5a34f3d72a50088ae94",
-    measurementId: "G-KE2PFSCKR3"
+    
   };
   
   if (!firebase.apps.length) {
